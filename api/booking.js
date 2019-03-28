@@ -27,7 +27,7 @@ router.delete('/:id', function(req, res, next) {
   var bookingId = req.params.id;
   bookingService.deleteBooking(bookingId,callback);
 });
-
+  
 
   router.post('/', function(req, res, next) {
     var callback = function(result){

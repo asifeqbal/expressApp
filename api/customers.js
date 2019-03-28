@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 
 router.post('/', function(req, res, next) {
   var callback = function(result){
-    res.send(result);
+    res.send({'result':result});
   }
   var customer = req.body;
   dbService.addCustomer(customer, callback);
